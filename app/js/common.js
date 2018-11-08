@@ -10,7 +10,7 @@ $(document).ready(function () {
 			});
 	});
 
-	$('#modal_close, #overlay, .cancel').click(function () {
+	$('#modal_close, #overlay, .cancel, .uninstall').click(function () {
 		$('#modal_form')
 			.animate({ opacity: 0, top: '45%' }, 200,
 				function () {
@@ -19,17 +19,6 @@ $(document).ready(function () {
 				}
 			);
 	});
-
-	$('.uninstall').click(function () {
-		$('#modal_form')
-			.animate({ opacity: 0, top: '45%' }, 200,
-				function () {
-					$(this).css('display', 'none');
-					$('#overlay').fadeOut(400);
-				}
-			);
-
-	})
 
 	$('.uninstall').click(function () {
 		function func() {
