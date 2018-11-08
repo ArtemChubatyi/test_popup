@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="css/main.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Open+Sans")
+    body
+        button#go run popup
+        #modal_form
+            #modal_close
+                img(src="img/icon-popup-close.svg", alt="close")
+            #warn
+                img(src="img/icon-warning_notify-red.svg", alt="warning")
+            p Are you sure you want to uninstall the Shazam app
+            .buttons
+                button.cancel Cancel
+                button.uninstall Uninstall
+        #overlay
+        script(src="js/scripts.min.js")
